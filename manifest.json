@@ -1,0 +1,16 @@
+{
+  "name": "Skip disliked YouTube Music songs",
+  "description": "ytm is dumb and plays songs that you have previously disliked. This extension skips those songs within 500ms",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.youtube.com/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}
